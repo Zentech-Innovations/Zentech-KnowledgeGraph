@@ -4,5 +4,5 @@ openai
 anthropic
 python-dotenv
 neo4j
-streamlit-agraph
+st_link_analysis
 spacy
