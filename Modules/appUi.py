@@ -75,7 +75,7 @@ def render_sidebar(db_connection):
         model_choice = st.selectbox(
             "Choose query model:",
             [GEMINI_MODEL, OPENAI_MODEL, CLAUDE_MODEL],
-            index=0,
+            index=1,
         )
 
         with st.container(border=True, height=380):
@@ -173,3 +173,4 @@ def render_chat_interface(db_connection, model_choice, model_wrapper):
             st.session_state.messages.append(
                 {"role": "assistant", "content": response_text}
             )
+
